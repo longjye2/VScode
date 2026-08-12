@@ -26,12 +26,23 @@
     font-size: 20px;
     margin: 0 10px;
     border-right: 1px solid #333;
+    padding-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+.nav a:hover {
+    color: red;
 }
 
 /* 內容區 */
 .content {
     text-align: center;
-    padding: 20px 0;    
+    padding: 20px 0;
+    width: 100%;       
 }
 
 /* 頁尾區 */
