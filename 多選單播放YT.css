@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+.warp {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.header{
+    font-size: 48px;
+    text-align: center;
+}
+
+/* 選單區 */
+.nav {
+    text-align: center;
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+    padding: 20px 0;    
+}
+
+.nav li {
+    display: inline;
+    font-size: 20px;
+    margin: 0 10px;
+    border-right: 1px solid #333;
+}
+
+/* 內容區 */
+.content {
+    text-align: center;
+    padding: 20px 0;    
+}
+
+/* 頁尾區 */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}

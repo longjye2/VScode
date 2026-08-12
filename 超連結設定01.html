@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            /* 將超連結轉成區塊 */
+            display: block;
+
+            /* 設定寬度 */
+            width: 200PX;
+
+             /* 設定高度 */
+             height: 50PX;
+
+             /* 設定背景顏色 */
+             background-color:rgb(255, 153, 127) ;
+
+             /* 設定文字置中 */
+            text-align:center;
+
+            /* 設定行高等於高度，則文字會自動置中 */
+            line-height: 50px;
+
+            /* 取消超連結的底線 */
+            text-decoration: none;
+
+            /* 設定文字顏色 */
+            color: #ffffff;
+
+            /* 設定區塊外形成為圓角 */
+            border-radius: 25px;
+        }
+        
+        /* 碰到超連結時改變底色 */
+        a:hover{
+            background-color: rgb(200, 255, 127);           
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>選單製作</h1>
+    <!--超連結是行內標籤，沒有寬高，若要設定寬高，則要轉成區塊-->
+    <p><a href="#">關於我們</a></p>
+    <p><a href="#">最新消息</a></p>
+    <p><a href="#">產品介紹</a></p>
+    <p><a href="#">線上訂購</a></p>
+
+    
+</body>
+</html>

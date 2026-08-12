@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 第一層ul */
+        nav ul {
+            margin: 0;
+            padding: 0;            
+        }
+
+        /* 第二層ul */
+        nav ul ul {
+            /* 第二層定位到第一層 */
+            position: absolute;
+
+            /* 隱藏第二層 */
+            display: none;
+        }
+
+        /* 第一層li */
+        nav li {
+            list-style: none;
+
+            /* 水平浮動對齊 */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">選單一</a>
+                <ul>
+                    <a href="#">選單一之一</a>
+                    <a href="#">選單一之二</a>
+                </ul>
+            </li>
+            <li>
+                <a href="#">選單二</a>
+            </li>
+
+            <li>
+                <a href="#">選單三</a>
+            </li>
+            <li>
+                <a href="#">選單四</a>
+            </li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>

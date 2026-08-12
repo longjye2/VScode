@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 這是註解的寫法 -->
+
+    <!--告訴瀏覽器用「UTF-8」這套萬國碼編碼來讀取和顯示網頁-->
+    <meta charset="UTF-8">
+
+    <!--
+    用來告訴手機或平板等行動裝置，讓網頁的寬度自動符合螢幕大小，並以正常比例顯示，
+    是製作響應式網頁（RWD）的重要設定
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    1.顯示分頁名稱：這段文字會直接出現在瀏覽器的分頁標籤（Tab）或視窗最上方的標題列上。
+    2.搜尋引擎顯示：當使用者將網頁加入「我的最愛/書籤」，或網頁被收錄在 Google 等搜尋引擎結果頁面（SERP）時，
+    也會以這裡的文字作為標題顯示。
+    3.一個網頁通常只會使用一次
+    -->
+    <title>Document</title>
+
+    <!--
+    在 HTML 裡面寫 CSS 有三種主要方法：
+    外部樣式（External）：
+    寫法：在 <head> 標籤內用 <link> 連結獨立的 .css 檔案。
+    程式碼：<link rel="stylesheet" href="style.css">
+    優點：多個網頁可共用、好維護。
+
+    內部樣式（Internal）：
+    寫法：直接寫在 HTML 的 <head> 標籤內，用 <style> 包起來。
+    程式碼：<style> h1 { color: red; } </style>
+    優點：只影響當下這個網頁，適合單頁特殊設計。
+
+    行內樣式（Inline）：
+    寫法：直接寫在 HTML 元素的 style 屬性裡面。
+    程式碼：<p style="color: blue;">文字</p>
+    優點：優先權最高、適合快速測試，但不好管理。
+    -->
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <!--段落，從<P>到</p>是一個段落，中間沒有斷行-->
+    <p>白日依山盡</p>
+    <p>黃河入海流</p>
+    <p>
+        欲窮千理目
+        更上一層樓
+    </p>
+
+
+    <!--如果要進行斷行，使用<br> -->
+    <p>白日依山盡</p><br>
+    <p>黃河入海流</p>
+<p>
+        欲窮千理目<br>
+        更上一層樓
+    </p>
+</body>
+</html>
