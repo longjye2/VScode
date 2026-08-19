@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二欄式版型</title>
+    <style>
+        .wrap {
+            width: 770px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .header {
+            background-color: aqua;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .nav {
+            background-color: bisque;
+            /* 浮動對齊靠左 */
+            float: left;
+        }
+
+        .nav2 {
+            background-color: rgb(203, 250, 165);
+            /* 浮動對齊靠右 */
+            float: right;
+        }
+
+        .nav,
+        .nav2 {
+            width: 200px;
+            height: 580px;
+            padding-top: 20px;
+        }
+
+        .content {
+            background-color: rgb(246, 176, 246);
+            height: 600px;
+            /* 因為用掉上縮排20px，所以總高度要減20px */
+            /* padding-top: 20px; */
+            /* 浮動對齊靠右 */
+            float: left;
+            width: 370px;
+            /* 總寬度770px-左選單200px-右選單200px*/
+        }
+
+        .ct {
+            background-color: rgb(139, 192, 242);
+        }
+
+        .cb {
+            background-color: rgb(96, 173, 244);
+        }
+
+        .ct,
+        .cb {
+            height: 280px;
+            padding-top: 20px;
+        }
+
+        .footer {
+            background-color: yellow;
+            height: 50px;
+            line-height: 50px;
+            /* 解除浮動方法一 */
+            /* clear: both; */
+        }
+
+        /* 解除浮動方法二 */
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">標題區（頁首）</div>
+
+        <div class="nav">選單區</div>
+        <div class="content">
+            <div class="ct">內容區1</div>
+            <div class="cb">內容區2</div>
+        </div>
+        <div class="nav2">選單2</div>
+
+        <!-- 增加一個解除浮動的區塊（方法二） -->
+        <div class="clearfix"></div>
+
+        <div class="footer">版權宣告區（頁尾）</div>
+    </div>
+</body>
+
+</html>

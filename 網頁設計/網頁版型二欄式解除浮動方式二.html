@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 770px;
+            margin: auto;
+        }
+        
+        .header {
+            background-color: aqua;
+        }
+
+        .nav {
+            background-color: bisque;
+            /* 浮動靠左對齊 */
+            float:left;
+            width: 200px;
+            height: 580px;
+            padding-top: 20px;            
+        }
+
+        .content {
+            background-color:blue;
+            height: 580px;
+            padding-top: 20px;   
+            /* 浮動靠右對齊 */
+            float:right;
+            width: 570px;
+        }
+
+        .footer {
+            background-color: rgb(13, 2, 22);
+            height: 50px;
+            line-height: 50px;
+            /* 解除浮動 */
+            /* clear: both; */
+        }
+
+        .clearfis {
+             /* 解除浮動 */
+            clear: both;
+        }
+   </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">標題區(頁首)</div>
+        <div class="nav">選單區</div>
+        <div class="content">內容區</div>
+        <!-- 解除浮動頁尾置於頁面底端 -->
+        <div class="clearfis"></div>
+        <div class="footer">版權宣告區(頁尾)</div>
+    </div>
+   
+</body>
+</html>
